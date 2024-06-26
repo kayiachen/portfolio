@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kayia's Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" media="screen" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <a href="index.html" title="Home">
+            <img id="logo" src="images/initial draft-05.svg" />
+          </a>
+          <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about.html" title="About">About</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            <li><a href="projects.html" title="Projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="photoheader">Photography</h1>
+        <p>
+          These are my black and white film photos. I'm enjoy film photography,
+          digital photography, and taking pictures on my phone.
+        </p>
+
+        <div class="gallery">
+          <a href="images/emily.JPG" rel="prettyPhoto[pp_gal]" title="Emily"
+            ><img src="images/emily.JPG"
+          /></a>
+          <a href="images/shadow.JPG" rel="prettyPhoto[pp_gal]" title="Shadow"
+            ><img src="images/shadow.JPG"
+          /></a>
+          <a href="images/kayia.JPG" rel="prettyPhoto[pp_gal]" title="Kayia"
+            ><img src="images/kayia.JPG"
+          /></a>
+          <a
+            href="images/harbor.JPG"
+            rel="prettyPhoto[pp_gal]"
+            title="Boston Inner Harbor"
+            ><img src="images/harbor.JPG"
+          /></a>
+        </div>
+
+        <h1 class="artheader">Art Work</h1>
+        <p>
+          These are my art work I've created during my senior year for my
+          graphic design and digital art class.
+        </p>
+
+        <div class="artwork">
+          <a
+            href="images/full/gaming2.jpg"
+            rel="prettyPhoto[pp_gal]"
+            title="Gaming Icon"
+            ><img src="images/thumbnail/gaming2.jpg"
+          /></a>
+          <a
+            href="images/full/signal2.jpg"
+            rel="prettyPhoto[pp_gal]"
+            title="Signal"
+            ><img src="images/thumbnail/signal2-copy.jpg"
+          /></a>
+          <a
+            href="images/full/skin2.jpg"
+            rel="prettyPhoto[pp_gal]"
+            title="Skincare Routine"
+            ><img src="images/thumbnail/skin2.jpg"
+          /></a>
+          <a
+            href="images/full/kitty2.jpg"
+            rel="prettyPhoto[pp_gal]"
+            title="Daydreams on Pell"
+            ><img src="images/thumbnail/hellokitty2.jpg"
+          /></a>
+        </div>
+      </main>
+      <footer>
+        <p id="footer-text">© Kayia Chen 2024</p>
+      </footer>
+    </div>
+    <!-- close wrapper -->
+
+    <script>
+      $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+          social_tools: false,
+          animation_speed: "fast" /* fast/slow/normal */,
+          slideshow: 5000 /* false OR interval time in ms */,
+          autoplay_slideshow: true /* true/false */,
+          opacity: 0.8 /* Value between 0 and 1 */,
+          show_title: true /* true/false */,
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+/* /* @charset "UTF-8"; */
+
+/* CSS Document */
+
+/* Universal Selector Reset */
+* { margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End Reset */
+
+:root {
+  --body-background-color: #ffffff;
+}
+
+body {
+  text-align: left;
+  font: 11px/1em "Lucida Grande", Lucida, Verdana, sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  height: 1000px;
+  background-color: coral;
+}
+
+h1 {
+  font-size: ;
+  line-height: ;
+  color: ;
+  margin-bottom: ;
+}
+
+h2 {
+  font-size: ;
+  line-height: ;
+  color: ;
+  margin-bottom: ;
+}
+
+h3 {
+  font-size: ;
+  line-height: ;
+  color: ;
+  margin-bottom: ;
+}
+
+p {
+  font-size: ;
+  line-height: ;
+  color: ;
+  margin-bottom: ;
+} 
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  height: 150px;
+  background-color:lightskyblue ;
+}
+
+nav {
+
+}
+
+nav li {
+  font-family: ;
+  font-size: 3em;
+  white-space: nowrap;
+  display: inline;
+  list-style-type: none;
+  padding-right: 1.5em ;
+} 
+
+nav li a {
+  color: rgb(119, 78, 50);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: paleturquoise;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+nav li a:visited {
+  color: plum;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+main {
+  width: 100%;
+  margin: 120px;
+  height: 450px; 
+  background-color:bisque;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.design {
+  width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+/* footer {
+
+}
+
+/* Media Queries */
+
+/* @media screen and (max-width: ) {
+
+
+} */
